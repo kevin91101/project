@@ -1,0 +1,217 @@
+html,body{
+    height: 100%;
+    position: relative;
+}
+
+.bg-cover{
+    background-position: center center;
+    background-size: cover;
+}
+
+header{
+    // font-family: "Yuji Boku", serif;
+    // font-weight: 900;
+    // font-style: normal;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 24px;
+
+    .LogIn{
+        button{
+            a{
+                display: block;
+                width: 70px;
+                height: 38px;
+                text-decoration: none;
+                color: inherit;
+                line-height: 38px;
+            }
+        }
+    }
+}
+
+main.idx{
+
+    section#s02 h5{
+        font-family: "Protest Revolution", sans-serif;
+        font-style: normal;
+        font-size: 24px;
+    }
+
+    section#s02 p, section#s02 a{
+    // font-family: "Noto Sans TC", sans-serif;
+    // font-optical-sizing: auto;
+    // font-style: normal;
+    // font-weight: 900;
+    font-family: "Yuji Boku", serif;
+    font-weight: 900;
+    font-style: normal;       
+    }
+
+    section#s04{
+        padding: 20px;
+        .container{
+            .waterfall {
+                width: 100%;
+                margin: 0px auto;
+                column-count: 5;
+                /*欄數*/
+                column-gap: 10px;
+                /*每欄間隔*/
+    
+                .item {
+                    background-color: white;
+                    // text-align: center;
+                    padding: 3px;
+                    box-sizing: border-box;
+                    margin: 0 auto 10px;
+                    break-inside: avoid;
+                    /*定義頁面、列或是區域發生中斷時的元素表現方式。 auto->元素中斷、acoid->元素不中斷*/
+                }
+    
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
+        }
+    }
+}
+
+main.abt{
+    #s01{
+        h1{
+            // font-family: "Yuji Boku", serif;
+            // font-weight: 900;
+            // font-style: normal;    
+            font-weight: 900;
+            color: var(--ULcolorOr);
+        }
+    }
+
+    #s02{
+        .backImg{
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: -700px -100px;
+            background-image: url(../images/新北/E1/Copy\ of\ DSC_1631.jpg);
+            height: 600px;
+        }
+    }
+}
+
+main.logIn{
+    flex-grow: 1;
+
+    .col-6{
+        font-family: "Protest Revolution", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        // position: relative;
+        .logIn01{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            a{
+                color: var(--ULcolorOr);
+            }
+        }
+        .login {
+            width: 300px;
+            height: 350px;
+            padding: 20px;
+            background-color: rgba(#000, 0.6);
+            border-radius: 20px;
+            // border: 5px solid #fff;
+            box-shadow: 0 0 30px #000;
+            backdrop-filter: blur(5px);
+            position: absolute;
+            // transform: translate(50%, 50%);
+            // margin-top: 25%;
+            top: 0;
+            transform: translateY(50%);
+
+
+            .logB{
+                a{
+                    text-decoration: none;
+                    color: var(--ULcolorOr);
+                }
+            }
+        }               
+    }       
+}
+
+.goTop{
+    position: fixed;
+    right: 24px;
+    bottom: 45px;
+    z-index: 600;
+    transform: translateX(0%);
+    transition: transform 0.2s;
+
+    .goTopBtn{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        .fa-circle-chevron-up{
+            color: grey;
+
+            ::before{
+                content: "\f35b";
+            }
+        }
+    }
+}
+
+.goTop.hide{
+    transform: translateX(200%);
+}
+
+footer{
+    position: sticky;
+    top: 100vh;
+
+    .col-2{
+        height: 100px;
+        width: 250px;
+    }
+
+    .fix_ri{
+        width: 50px;
+        box-sizing: border-box;
+        position: fixed;
+        bottom: 95px;
+        right: 23px;
+        z-index: 999;
+        text-align: center;
+
+        a{
+            display: inline-block;
+            margin-bottom: 10px;
+            color: #444;
+            text-decoration: none;
+            background-color: transparent;
+
+            img{
+                opacity: 1;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992xp){
+    header div.LogIn{
+        color: navajowhite;
+        margin: 0 16px;
+    }
+}

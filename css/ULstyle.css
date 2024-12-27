@@ -1,0 +1,175 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+header {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+}
+header .LogIn button a {
+  display: block;
+  width: 70px;
+  height: 38px;
+  text-decoration: none;
+  color: inherit;
+  line-height: 38px;
+}
+
+main.idx section#s02 h5 {
+  font-family: "Protest Revolution", sans-serif;
+  font-style: normal;
+  font-size: 24px;
+}
+main.idx section#s02 p, main.idx section#s02 a {
+  font-family: "Yuji Boku", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+main.idx section#s04 {
+  padding: 20px;
+}
+main.idx section#s04 .container .waterfall {
+  width: 100%;
+  margin: 0px auto;
+  -moz-column-count: 5;
+       column-count: 5;
+  /*欄數*/
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  /*每欄間隔*/
+}
+main.idx section#s04 .container .waterfall .item {
+  background-color: white;
+  padding: 3px;
+  box-sizing: border-box;
+  margin: 0 auto 10px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  /*定義頁面、列或是區域發生中斷時的元素表現方式。 auto->元素中斷、acoid->元素不中斷*/
+}
+main.idx section#s04 .container .waterfall img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+
+main.abt #s01 h1 {
+  font-weight: 900;
+  color: var(--ULcolorOr);
+}
+main.abt #s02 .backImg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: -700px -100px;
+  background-image: url(../images/新北/E1/Copy\ of\ DSC_1631.jpg);
+  height: 600px;
+}
+
+main.logIn {
+  flex-grow: 1;
+}
+main.logIn .col-6 {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+main.logIn .col-6 .logIn01 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+main.logIn .col-6 .logIn01 a {
+  color: var(--ULcolorOr);
+}
+main.logIn .col-6 .login {
+  width: 300px;
+  height: 350px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 0 30px #000;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  transform: translateY(50%);
+}
+main.logIn .col-6 .login .logB a {
+  text-decoration: none;
+  color: var(--ULcolorOr);
+}
+
+.goTop {
+  position: fixed;
+  right: 24px;
+  bottom: 45px;
+  z-index: 600;
+  transform: translateX(0%);
+  transition: transform 0.2s;
+}
+.goTop .goTopBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.goTop .goTopBtn .fa-circle-chevron-up {
+  color: grey;
+}
+.goTop .goTopBtn .fa-circle-chevron-up ::before {
+  content: "\f35b";
+}
+
+.goTop.hide {
+  transform: translateX(200%);
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+}
+footer .col-2 {
+  height: 100px;
+  width: 250px;
+}
+footer .fix_ri {
+  width: 50px;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 95px;
+  right: 23px;
+  z-index: 999;
+  text-align: center;
+}
+footer .fix_ri a {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #444;
+  text-decoration: none;
+  background-color: transparent;
+}
+footer .fix_ri a img {
+  opacity: 1;
+  width: 100%;
+}
+
+@media screen and (max-width: 992xp) {
+  header div.LogIn {
+    color: navajowhite;
+    margin: 0 16px;
+  }
+}/*# sourceMappingURL=ULstyle.css.map */

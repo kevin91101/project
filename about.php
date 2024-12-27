@@ -4,7 +4,7 @@
     <main class="abt bg-dark">
         <section id="s01">
             <div class="container">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                     <div class="carousel-inner">
                         <div class="carousel-item active bg-cover" style="background-image: url(images/about/2018-1.jpg); height: 70vh;">
                             <div class="row row01 h-100 w-100">
@@ -67,7 +67,7 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <!-- <img src="images/about/2018-1.jpg" id="show-img" class="img-fluid" alt="" style="height: 60vh;"> -->
+                        <img src="images/about/2018-1.jpg" id="show-img" class="img-fluid" alt="" style="height: 60vh;">
                         <ul class="list-unstyled d-flex justify-content-between flex-nowrap overflow-auto" id="show-img-details">
                             <li class="text-bg-secondary p-2 text-nowrap me-1">
                                 <img src="images/about/2018-1.jpg" width="175px" height="150px" alt="">
@@ -91,6 +91,65 @@
                                 <img src="images/about/2024-1.jpg" width="175px" height="150px" alt="">
                             </li>
                         </ul>
+                    </div>
+                </div> -->
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2 bg-cover">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/about/2018-1.jpg" alt="" style="height: 60vh; object-position: 50% 50%;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2019-1.jpeg" alt="" style="height: 60vh; object-position: 50% 50%;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2020-2.jpg" alt="" style="height: 60vh; object-position: 50% 50%;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2021-2.jpg" alt="" style="height: 60vh; object-position: 50% 50%;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2022-1.jpg" alt="" style="height: 60vh; object-position: 50% 50%;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2023-1.jpg" alt="" style="height: 60vh; object-position: 50% 50%;">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2024-1.jpg" alt="" style="height: 60vh; object-position: 50% 50%;">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbSlider="" class="swiper mySwiper bg-cover">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/about/2018-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
+                            <h1 style="position: absolute;">2018</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2019-1.jpeg" alt="" style="height: 20vh; object-position: 50% 50%;">
+                            <h1 style="position: absolute;">2018</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2020-2.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
+                            <h1 style="position: absolute;">2018</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2021-2.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
+                            <h1 style="position: absolute;">2018</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2022-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
+                            <h1 style="position: absolute;">2018</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2023-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
+                            <h1 style="position: absolute;">2018</h1>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/about/2024-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
+                            <h1 style="position: absolute;">2018</h1>
+                        </div>
                     </div>
                 </div>
             </div>

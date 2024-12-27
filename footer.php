@@ -41,18 +41,38 @@
 </body>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/jquery-3.7.1.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/ULscript.js"></script>
 <script>
-    $(function() {
-        $("#show-img-details li img").click(function() {
-            console.log($(this).attr("src"));
-            thisimg = $(this).attr("src");
-            $("#show-img").attr("src", thisimg);
-            $("#show-img").attr("style", " background-image: url(" + thisimg + ");");
-            console.log("style", " background-image: url(" + thisimg + ");")
-        });
+    // $(function() {
+    //     $("#show-img-details li img").click(function() {
+    //         console.log($(this).attr("src"));
+    //         thisimg = $(this).attr("src");
+    //         $("#show-img").attr("src", thisimg);
+    //         $("#show-img").attr("style", " background-image: url(" + thisimg + ");");
+    //         console.log("style", " background-image: url(" + thisimg + ");")
+    //     });
+    // });
+
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
     });
 
     new WOW().init();// wow animation

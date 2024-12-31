@@ -4,96 +4,7 @@
     <main class="abt bg-dark">
         <section id="s01">
             <div class="container">
-                <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active bg-cover" style="background-image: url(images/about/2018-1.jpg); height: 70vh;">
-                            <div class="row row01 h-100 w-100">
-                                <div class="col-4 offset-2 position-relative">
-                                    <h1 class="position-absolute bottom-0">2018</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item bg-cover" style="background-image: url(images/about/2019-1.jpeg); height: 70vh;">
-                            <div class="row row01 h-100 w-100">
-                                <div class="col-4 offset-2 position-relative">
-                                    <h1 class="position-absolute bottom-0">2019</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item bg-cover" style="background-image: url(images/about/2020-2.jpg); height: 70vh;">
-                            <div class="row row01 h-100 w-100">
-                                <div class="col-4 offset-2 position-relative">
-                                    <h1 class="position-absolute bottom-0">2020</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item bg-cover" style="background-image: url(images/about/2021-2.jpg); height: 70vh;">
-                            <div class="row row01 h-100 w-100">
-                                <div class="col-4 offset-2 position-relative">
-                                    <h1 class="position-absolute bottom-0">2021</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item bg-cover" style="background-image: url(images/about/2022-1.jpg); height: 70vh;">
-                            <div class="row row01 h-100 w-100">
-                                <div class="col-4 offset-2 position-relative">
-                                    <h1 class="position-absolute bottom-0">2022</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item bg-cover" style="background-image: url(images/about/2023-1.jpg); height: 70vh;">
-                            <div class="row row01 h-100 w-100">
-                                <div class="col-4 offset-2 position-relative">
-                                    <h1 class="position-absolute bottom-0">2023</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item bg-cover" style="background-image: url(images/about/2024-1.jpg); height: 70vh;">
-                            <div class="row row01 h-100">
-                                <div class="col-4 offset-2 position-relative">
-                                    <h1 class="position-absolute bottom-0">2024</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <img src="images/about/2018-1.jpg" id="show-img" class="img-fluid" alt="" style="height: 60vh;">
-                        <ul class="list-unstyled d-flex justify-content-between flex-nowrap overflow-auto" id="show-img-details">
-                            <li class="text-bg-secondary p-2 text-nowrap me-1">
-                                <img src="images/about/2018-1.jpg" width="175px" height="150px" alt="">
-                            </li>
-                            <li class="text-bg-secondary p-2 text-nowrap me-1">
-                                <img src="images/about/2019-1.jpeg" width="175px" height="150px" alt="">
-                            </li>
-                            <li class="text-bg-secondary p-2 text-nowrap me-1">
-                                <img src="images/about/2020-2.jpg" width="175px" height="150px" alt="">
-                            </li>
-                            <li class="text-bg-secondary p-2 text-nowrap me-1">
-                                <img src="images/about/2021-2.jpg" width="175px" height="150px" alt="">
-                            </li>
-                            <li class="text-bg-secondary p-2 text-nowrap me-1">
-                                <img src="images/about/2022-1.jpg" width="175px" height="150px" alt="">
-                            </li>
-                            <li class="text-bg-secondary p-2 text-nowrap me-1">
-                                <img src="images/about/2023-1.jpg" width="175px" height="150px" alt="">
-                            </li>
-                            <li class="text-bg-secondary p-2 text-nowrap me-1">
-                                <img src="images/about/2024-1.jpg" width="175px" height="150px" alt="">
-                            </li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2 bg-cover">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff;" class="swiper mySwiper2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="images/about/2018-1.jpg" alt="" style="height: 60vh; object-position: 50% 50%;">
@@ -120,35 +31,35 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-                <div thumbSlider="" class="swiper mySwiper bg-cover">
+                <div thumbSlider="" class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="images/about/2018-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
-                            <h1 style="position: absolute;">2018</h1>
+                            <h1>2018</h1>
                         </div>
                         <div class="swiper-slide">
                             <img src="images/about/2019-1.jpeg" alt="" style="height: 20vh; object-position: 50% 50%;">
-                            <h1 style="position: absolute;">2018</h1>
+                            <h1>2019</h1>
                         </div>
                         <div class="swiper-slide">
                             <img src="images/about/2020-2.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
-                            <h1 style="position: absolute;">2018</h1>
+                            <h1>2020</h1>
                         </div>
                         <div class="swiper-slide">
                             <img src="images/about/2021-2.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
-                            <h1 style="position: absolute;">2018</h1>
+                            <h1>2021</h1>
                         </div>
                         <div class="swiper-slide">
                             <img src="images/about/2022-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
-                            <h1 style="position: absolute;">2018</h1>
+                            <h1>2022</h1>
                         </div>
                         <div class="swiper-slide">
                             <img src="images/about/2023-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
-                            <h1 style="position: absolute;">2018</h1>
+                            <h1>2023</h1>
                         </div>
                         <div class="swiper-slide">
                             <img src="images/about/2024-1.jpg" alt="" style="height: 20vh; object-position: 50% 50%;">
-                            <h1 style="position: absolute;">2018</h1>
+                            <h1>2024</h1>
                         </div>
                     </div>
                 </div>

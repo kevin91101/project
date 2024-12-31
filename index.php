@@ -69,12 +69,14 @@
             <div class="container">
                 <div class="row text-white py-5">
                     <div class="col-md-4 text-center">
-                        <i class="fa-solid fa-person-falling fa-8x text-black my-3 wow animate__rollIn"
-                            data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i>
-                        <div class="h3 fw-900 text-muted">體操</div>
-                        <p class="s06_text">
-                            體操是一項結合力量、柔韌性、平衡和協調性的運動，涵蓋地板、吊環、鞍馬、單槓等多種項目。透過練習體操，不僅能增強身體素質，還能提升專注力與毅力，適合各年齡層參與，是一項兼具挑戰與美感的運動。
-                        </p>
+                        <!-- <i class="fa-solid fa-person-falling fa-8x text-black my-3 wow animate__rollIn" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i> -->
+                        <img id="imgprod" src="./images/項目/gymnastics2.png" alt="" style="width: 300px;">
+                        <div class="text">
+                            <div class="h3 fw-900 text-muted">體操</div>
+                            <p class="s06_text">
+                                體操是一項結合力量、柔韌性、平衡和協調性的運動，涵蓋地板、吊環、鞍馬、單槓等多種項目。透過練習體操，不僅能增強身體素質，還能提升專注力與毅力，適合各年齡層參與，是一項兼具挑戰與美感的運動。
+                            </p>
+                        </div>
                     </div>
                     <div class="col-md-4 text-center">
                         <i class="fa-solid fa-dumbbell fa-8x text-black my-3 wow animate__swing" data-wow-duration="1s"

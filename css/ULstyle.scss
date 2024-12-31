@@ -49,6 +49,20 @@ main.idx{
     font-style: normal;       
     }
 
+    section#s03{
+        position: relative;
+        z-index: 0;
+        #imgprod{
+            position: absolute;
+            top: 0;
+            left: 20%;
+            z-index: 1;
+        }
+        .text{
+            z-index: 2;
+        }
+    }
+
     section#s04{
         padding: 20px;
         .container{
@@ -83,11 +97,15 @@ main.idx{
 main.abt{
     #s01{
         h1{
+            position: absolute;
+            font-family: "Noto Sans TC", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
             // font-family: "Yuji Boku", serif;
             // font-weight: 900;
             // font-style: normal;    
             font-weight: 900;
-            color: var(--ULcolorOr);
+            color: white;
         }
 
         .swiper{
@@ -143,6 +161,26 @@ main.abt{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .swiper-button-next::after, .swiper-button-prev::after{
+            // position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500%;
+            height: 620px;
+            padding: 200px;
+            color: #fff;
+            text-align: center;
+            background: 0 0;
+            border: 0;
+            opacity: .5;
+            transition: opacity .15s ease;
+            // background-color: #000;
         }
     }
 

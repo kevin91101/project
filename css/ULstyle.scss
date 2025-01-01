@@ -50,16 +50,9 @@ main.idx{
     }
 
     section#s03{
-        position: relative;
-        z-index: 0;
+
         #imgprod{
-            position: absolute;
-            top: 0;
-            left: 20%;
-            z-index: 1;
-        }
-        .text{
-            z-index: 2;
+            filter:drop-shadow(10px 7px 10px black);// 圖片邊緣陰影
         }
     }
 

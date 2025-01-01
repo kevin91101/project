@@ -34,18 +34,8 @@ main.idx section#s02 p, main.idx section#s02 a {
   font-weight: 900;
   font-style: normal;
 }
-main.idx section#s03 {
-  position: relative;
-  z-index: 0;
-}
 main.idx section#s03 #imgprod {
-  position: absolute;
-  top: 0;
-  left: 20%;
-  z-index: 1;
-}
-main.idx section#s03 .text {
-  z-index: 2;
+  filter: drop-shadow(10px 7px 10px black);
 }
 main.idx section#s04 {
   padding: 20px;

@@ -70,7 +70,7 @@
                 <div class="row text-white py-5">
                     <div class="col-md-4 text-center">
                         <!-- <i class="fa-solid fa-person-falling fa-8x text-black my-3 wow animate__rollIn" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i> -->
-                        <img id="imgprod" src="./images/項目/gymnastics3.png" alt="" style="width: 70%; height: 30vh;">
+                        <img id="imgprod" src="./images/項目/g.png" alt="" style="width: 100%; height: 40vh;">
                         <div class="text h-100">
                             <div class="h3 fw-900 text-muted">體操</div>
                             <p class="s06_text">
@@ -80,7 +80,7 @@
                     </div>
                     <div class="col-md-4 text-center">
                         <!-- <i class="fa-solid fa-dumbbell fa-8x text-black my-3 wow animate__swing" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i> -->
-                        <img id="imgprod" src="./images/項目/weightlifting3.png" alt="" style="width: 90%; height: 30vh;">
+                        <img id="imgprod" src="./images/項目/w.png" alt="" style="width: 100%; height: 40vh;">
                         <div class="h3 fw-900 text-muted">舉重</div>
                         <p class="s06_text">
                             舉重是一項力量型運動，運動員透過抓舉與挺舉兩種技術，將杠鈴從地面提升至頭頂。此運動強調全身協調與爆發力，能有效增強肌肉力量、核心穩定性和體能。舉重不僅是競技運動，還是健身訓練的重要項目之一，適合追求力量與健康的人參與。
@@ -88,7 +88,7 @@
                     </div>
                     <div class="col-md-4 text-center">
                         <!-- <i class="fa-solid fa-person-swimming fa-8x text-black my-3 wow animate__shakeX" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i> -->
-                        <img id="imgprod" src="./images/項目/run3.png" alt="" style="width: 100%; height: 30vh;">
+                        <img id="imgprod" src="./images/項目/r.png" alt="" style="width: 100%; height: 40vh;">
                         <div class="h3 fw-900 text-muted">有氧</div>
                         <p class="s06_text">
                             有氧運動是一種持續、中等強度的運動形式，如跑步、騎車、游泳等，主要透過提高心率促進心肺功能增強。此運動有助於燃燒脂肪、提升耐力、減壓及改善整體健康，適合不同年齡層和體能水平的人參與。有氧運動簡單易行，是保持健康生活的重要方式之一。
@@ -100,66 +100,50 @@
         
         <section id="s04">
             <div class="container">
-                <!-- <div class="row">
-                    <div class="col-4">
-                        <a href="https://www.instagram.com/p/DD88bZcyuGX/">
-                            <img src="./images/ig貼文/TYR.jpg" alt="" style="width: 20vw; height: 20vw;">
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="https://www.instagram.com/p/DDrY9i8zUl7/">
-                            <img src="./images/ig貼文/class.jpg" alt="" style="width: 20vw; height: 20vw;">
-                        </a>
-                    </div>
-                    <div class="col-4">
-                        <a href="https://www.instagram.com/reel/DDWRsghzKwc/">
-                            <img src="./images/ig貼文/dog.jpg" alt="" style="width: 20vw; height: 20vw;">
-                        </a>
-                    </div>
-                </div> -->
+                <!-- 可以用JSON輸入圖檔與貼文連結 -->
                 <div class="waterfall">
                     <div class="item">
-                        <a href="https://www.instagram.com/p/DD88bZcyuGX/">
+                        <a href="https://www.instagram.com/p/DD88bZcyuGX/" target="_blank">
                             <img src="./images/ig貼文/TYR.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/p/DDrY9i8zUl7/">
+                        <a href="https://www.instagram.com/p/DDrY9i8zUl7/" target="_blank">
                             <img src="./images/ig貼文/class.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/reel/DDWRsghzKwc/">
+                        <a href="https://www.instagram.com/reel/DDWRsghzKwc/" target="_blank">
                             <img src="./images/ig貼文/dog.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/crossfit_ultilife/p/DC1PpPazxYn/?img_index=1">
+                        <a href="https://www.instagram.com/crossfit_ultilife/p/DC1PpPazxYn/?img_index=1" target="_blank">
                             <img src="./images/ig貼文/coach.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/p/DCCn6kITFHi/">
+                        <a href="https://www.instagram.com/p/DCCn6kITFHi/" target="_blank">
                             <img src="./images/ig貼文/465684822_417611988070473_221002.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/reel/DBL1bW1IURf/">
+                        <a href="https://www.instagram.com/reel/DBL1bW1IURf/" target="_blank">
                             <img src="./images/ig貼文/新竹.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/reel/C_j36Y_o-k1/">
+                        <a href="https://www.instagram.com/reel/C_j36Y_o-k1/" target="_blank">
                             <img src="./images/ig貼文/clean.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/p/DDZp2Pdz70q/">
+                        <a href="https://www.instagram.com/p/DDZp2Pdz70q/" target="_blank">
                             <img src="./images/ig貼文/wall.jpg" alt="">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://www.instagram.com/reel/C-nUYswSAmw/">
+                        <a href="https://www.instagram.com/reel/C-nUYswSAmw/" target="_blank">
                             <img src="./images/ig貼文/swin.jpg" alt="">
                         </a>
                     </div>

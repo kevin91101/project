@@ -8,7 +8,7 @@ if (isset($_POST['usrAccount']))
    $id=$_POST['usrAccount'];
    $password=$_POST['usrPassword'];
    include "db_open.php";
-   $sql="select * from member where Name='$id'";
+   $sql="select * from stmember where Name='$id'";
    $result=mysqli_query($link, $sql);
    if (!$row=mysqli_fetch_assoc($result))
    {$err = "帳號錯誤";}
@@ -35,15 +35,15 @@ if (isset($_POST['usrAccount']))
 	
 	<!-- ================= Favicon ================== -->
     <!-- Standard -->
-    <link rel="shortcut icon" href="logo/fav.png">
+    <link rel="shortcut icon" href="logo/5-318.png">
     <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logo/5-318.png">
     <!-- Retina iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="114x114" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logo/5-318.png">
     <!-- Standard iPad Touch Icon--> 
-    <link rel="apple-touch-icon" sizes="72x72" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logo/5-318.png">
     <!-- Standard iPhone Touch Icon--> 
-    <link rel="apple-touch-icon" sizes="57x57" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="logo/5-318.png">
 	
 	<!-- Styles -->
     <link href="assets/fontAwesome/css/fontawesome-all.min.css" rel="stylesheet">
@@ -61,7 +61,7 @@ if (isset($_POST['usrAccount']))
 				<div class="col-lg-6 col-lg-offset-3">
 					<div class="login-content">
 						<div class="login-logo">
-							 <h2><img id="" src="logo/logoSmall.png" style="width:50px;height:43px;"/>後端管理系統</h2>
+							 <h2><img id="" src="logo/5-318.png" style="width:50px;height:50px;"/>後端管理系統</h2>
 						</div>
 						<div class="login-form">
 							<h4>帳號登錄</h4>

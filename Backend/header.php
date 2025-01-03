@@ -15,15 +15,15 @@ if (!isset($_SESSION['sAccount']))
 
     <!-- ================= Favicon ================== -->
     <!-- Standard -->
-    <link rel="shortcut icon" href="logo/fav.png">
+    <link rel="shortcut icon" href="logo/5-318.png">
     <!-- Retina iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="144x144" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logo/5-318.png">
     <!-- Retina iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="114x114" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logo/5-318.png">
     <!-- Standard iPad Touch Icon-->
-    <link rel="apple-touch-icon" sizes="72x72" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logo/5-318.png">
     <!-- Standard iPhone Touch Icon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="logo/fav.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="logo/5-318.png">
 
     <!-- Styles -->
     <link href="assets/fontAwesome/css/fontawesome-all.min.css" rel="stylesheet">
@@ -91,7 +91,10 @@ if (!isset($_SESSION['sAccount']))
         <div class="pull-left">
             <div class="logo">
                 <a href="index.php">
-                    <span style="font-size:18px;color:#fff; font-weight"><img id="logoImg" src="logo/logoSmall.png" data-logo_big="logo/logoSmall.png" data-logo_small="logo/logoSmall.png" />後台管理系統</span>
+                    <span style="font-size:18px;color:#fff; font-weight">
+                        <img id="logoImg" src="logo/5-318.png" data-logo_big="logo/5-318.png" data-logo_small="logo/5-318.png"/>
+                        後台管理系統
+                    </span>
                 </a>
             </div>
             <div class="hamburger sidebar-toggle">

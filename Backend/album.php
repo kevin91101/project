@@ -27,7 +27,7 @@ if (isset($_GET['mode'])){
                                 <div class="card-header">
                                     <h2>相簿類別管理</h2><Br/>
 									 <div class="row">
-									<a href="Attractionsdetail2.php" ><button type="button" class="col-lg-2 btn btn-primary btn-flat btn-addon m-b-10 m-l-20"><i class="ti-plus"></i>新增類別 </button></a>
+									<a href="add_album.php" ><button type="button" class="col-lg-2 btn btn-primary btn-flat btn-addon m-b-10 m-l-20"><i class="ti-plus"></i>新增類別 </button></a>
 									<div class="basic-form col-lg-8">
                                         <form>
                                             
@@ -50,7 +50,7 @@ if (isset($_GET['mode'])){
                                         <thead>
                                             <tr style="border-top:1px solid #e7e7e7;">
                                                 <th></th>
-                                                <th>類別編號</th>
+                                                <th>類別ID</th>
                                                 <th>類別名稱</th>
                                                 <th></th>
                                                 <th></th>
@@ -58,7 +58,7 @@ if (isset($_GET['mode'])){
                                         </thead>
                                         <tbody>
                                         <?php
-                                            $records_per_page = 4;  // 每一頁顯示的記錄筆數
+                                            $records_per_page = 10;  // 每一頁顯示的記錄筆數
                                             $rc=0;
                                             include 'db_open.php';
                                       //      echo "SELECT * FROM product".$varWhere;
@@ -80,16 +80,21 @@ if (isset($_GET['mode'])){
                                             while ($rc < $records_per_page and $row=mysqli_fetch_assoc($result) ){
                                         ?>
                                             <tr>
-                                            <th scope="row"></th>
+                                            <th scope="row">
+                                                <?php
+                                                echo ++$rc;
+                                                ?>
+                                            </th>
                                             <td><?=$row['Pid']?></td>
                                             <td><?=$row['Pname']?></td>
                                             <td></td>   
-                                            <td><a href="Attractionsdetailu2.php?picc=<?=$row['Pid']?>"><button type="button" class="btn btn btn-info btn btn-flat btn-addon btn-sm m-b-5 m-l-5"> 
+                                            <td><a href="edit_album.php?Pid=<?=$row['Pid']?>"><button type="button" class="btn btn btn-info btn btn-flat btn-addon btn-sm m-b-5 m-l-5"> 
                                             <i class="ti-pencil-alt"></i>修改</button></a><button type="button" onclick="javascript:deleteConfirm('album.php', '<?=$row['Pid']?>')" class="btn btn btn-default btn btn-flat btn-addon btn-sm m-b-5 m-l-5">
                                             <i class="ti-trash"></i>刪除</button></td>
                                             </tr>
                                         <?php
-                                        $rc=$rc+1; }?>
+                                        // $rc=$rc+1; 
+                                        }?>
                                         <?php
                                             echo "<tr>\n";
                                             echo "<td colspan=5>\n";

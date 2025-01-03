@@ -60,7 +60,7 @@ if (isset($_GET['mode'])){
                                             $records_per_page = 4;  // 每一頁顯示的記錄筆數
                                             $rc=0;
                                             include 'db_open.php';
-                                      //      echo "SELECT * FROM product".$varWhere;
+                                            //echo "SELECT * FROM product".$varWhere;
                                             // $sql="SELECT * FROM 0920classwork order by pic";
                                             // $result=mysqli_query($link, $sql); 
                                             // while ($row=mysqli_fetch_assoc($result) )

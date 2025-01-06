@@ -109,21 +109,23 @@
         </section>
 
         <section id="s03">
-            <div class="coach">
+            <div class="coach wow animate__animated animate__zoomIn">
                 <div class="wrapper">
                     <img src="./images/coach/DSC06355.JPG" alt="" class="cover-image">
                 </div>
-                <img src="./images/png.png" alt="" class="title">
+                <!-- <img src="./images/png.png" alt="" class="title"> -->
+                <!-- <h1 class="title text-center text-white fw-900">DANNY</h1> -->
+                <div class="text-center title">DANNY</div>
                 <img src="./images/coach/danny 筆刷.png" alt="" class="character">
             </div>
-            <div class="coach">
+            <div class="coach wow animate__animated animate__zoomIn">
                 <div class="wrapper">
-                    <img src="./images/coach/connie-bg.jpg" alt="" class="cover-image">
+                    <img src="./images/coach/DSC06897.JPG" alt="" class="cover-image">
                 </div>
                 <img src="./images/png.png" alt="" class="title">
                 <img src="./images/coach/connie 筆刷.png" alt="" class="character">
             </div>
-            <div class="coach">
+            <div class="coach wow animate__animated animate__zoomIn">
                 <div class="wrapper">
                     <img src="./images/coach/Copy of DSC_0967.jpg" alt="" class="cover-image">
                 </div>

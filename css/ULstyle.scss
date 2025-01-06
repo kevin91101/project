@@ -263,6 +263,10 @@ main.abt{
         .title{
             width: 100%;
             transition: transform 0.5s;
+            color: white;
+            font-size: 3rem;
+            font-weight: 900;
+            text-shadow: #fd4511 1px 0px 10px;
         }
 
         .coach:hover .title{

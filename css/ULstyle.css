@@ -210,6 +210,10 @@ main.abt #s03 .coach:hover .wrapper::after {
 main.abt #s03 .title {
   width: 100%;
   transition: transform 0.5s;
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  text-shadow: #fd4511 1px 0px 10px;
 }
 main.abt #s03 .coach:hover .title {
   transform: translate3d(0%, -50px, 100px);

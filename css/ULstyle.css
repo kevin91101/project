@@ -24,23 +24,23 @@ header .LogIn button a {
   line-height: 38px;
 }
 
-main.idx section#s02 h5 {
+main.idx #s02 h5 {
   font-family: "Protest Revolution", sans-serif;
   font-style: normal;
   font-size: 24px;
 }
-main.idx section#s02 p, main.idx section#s02 a {
+main.idx #s02 a, main.idx #s02 p {
   font-family: "Yuji Boku", serif;
   font-weight: 900;
   font-style: normal;
 }
-main.idx section#s03 #imgprod {
+main.idx #s03 #imgprod {
   filter: drop-shadow(10px 7px 10px black);
 }
-main.idx section#s04 {
+main.idx #s04 {
   padding: 20px;
 }
-main.idx section#s04 .container .waterfall {
+main.idx #s04 .container .waterfall {
   width: 100%;
   margin: 0px auto;
   -moz-column-count: 5;
@@ -50,7 +50,7 @@ main.idx section#s04 .container .waterfall {
        column-gap: 10px;
   /*每欄間隔*/
 }
-main.idx section#s04 .container .waterfall .item {
+main.idx #s04 .container .waterfall .item {
   background-color: white;
   padding: 3px;
   box-sizing: border-box;
@@ -59,7 +59,7 @@ main.idx section#s04 .container .waterfall .item {
        break-inside: avoid;
   /*定義頁面、列或是區域發生中斷時的元素表現方式。 auto->元素中斷、acoid->元素不中斷*/
 }
-main.idx section#s04 .container .waterfall img {
+main.idx #s04 .container .waterfall img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -146,6 +146,84 @@ main.abt #s02 .backImg {
   background-position: -700px -100px;
   background-image: url(../images/新北/E1/Copy\ of\ DSC_1631.jpg);
   height: 600px;
+}
+main.abt #s03 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+main.abt #s03 .coach {
+  width: 300px;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 50px;
+  border-radius: 5px;
+}
+main.abt #s03 .cover-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+main.abt #s03 .wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  border-radius: 5px;
+}
+main.abt #s03 .coach:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+main.abt #s03 .wrapper::before, main.abt #s03 .wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+}
+main.abt #s03 .wrapper::before {
+  top: 0;
+  height: 100%;
+  background-image: linear-gradient(to top, transparent 46%, rgba(12, 13, 19, 0.5) 68%, rgb(12, 13, 19) 97%);
+  border-radius: 5px;
+}
+main.abt #s03 .coach:hover .wrapper::before, main.abt #s03 .wrapper::after {
+  opacity: 1;
+}
+main.abt #s03 .coach:hover .wrapper::after {
+  height: 120px;
+}
+main.abt #s03 .title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+main.abt #s03 .coach:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+main.abt #s03 .character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+main.abt #s03 .coach:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
 }
 
 main.logIn {

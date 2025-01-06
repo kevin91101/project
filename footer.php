@@ -44,18 +44,10 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/jquery-3.7.1.js"></script>
 <script src="js/wow.min.js"></script>
+<script src="js/vue.global.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 <script src="js/ULscript.js"></script>
 <script>
-    // $(function() {
-    //     $("#show-img-details li img").click(function() {
-    //         console.log($(this).attr("src"));
-    //         thisimg = $(this).attr("src");
-    //         $("#show-img").attr("src", thisimg);
-    //         $("#show-img").attr("style", " background-image: url(" + thisimg + ");");
-    //         console.log("style", " background-image: url(" + thisimg + ");")
-    //     });
-    // });
-
     var swiper = new Swiper(".mySwiper", {
         loop: true,
         spaceBetween: 10,
@@ -83,13 +75,6 @@
         entries.forEach(entry => {
             const el = entry.target
             if (entry.isIntersecting && !el.classList.contains('is-visible')) {
-              // el.classList.add('si-visible');
-              // setTimeout(() => {
-              //     counterUp(el, {
-              //         duration: 2000,
-              //         delay: 16,
-              //     });
-              // }, 2000);
                 counterUp(el, {
                     duration: 2000,
                     delay: 16,
@@ -128,5 +113,148 @@
         600
     );
     });
+</script>
+<script>
+    const App = {
+        data() {
+            return {
+                username: '',
+                password: '',
+                re_password: '',
+                email: '',
+                username_login: '',
+                password_login: '',
+                flag_username: false,
+                flag_password: false,
+                flag_re_password: false,
+                flag_email: false,
+                flag_username_login: false,
+                flag_password_login: false,
+            }
+        },
+        watch: {
+            username: function(newValue) {
+                const vm = this;
+                if(newValue.length > 4 && newValue.length < 11) {
+                    vm.flag_username = true;
+                }else {
+                    vm.flag_username = false;
+                }
+            },
+            password: function(pwValue) {
+                const vm = this;
+                if(pwValue.length > 7 && pwValue.length < 13) {
+                    vm.flag_password = true;
+                    if(vm.password == vm.re_password) {
+                        vm.flag_re_password = true;
+                    }else {
+                        vm.flag_re_password = false;
+                    }
+                }else {
+                    vm.flag_password = false;
+                    vm.flag_re_password = false;
+                }
+            },
+            re_password: function(reValue) {
+                const vm = this;
+                if(vm.flag_password) {
+                    if(vm.password == vm.re_password) {
+                        vm.flag_re_password = true;
+                    }else {
+                        vm.flag_re_password = false;
+                    }
+                }else {
+                    vm.flag_re_password = false;
+                }
+            },
+            email: function(newValue) {
+                const vm = this;
+                if(!vm.email == '') {
+                    vm.flag_email = true;
+                }else {
+                    vm.flag_email = false;
+                }
+            },
+            username_login: function(newValue) {
+                const vm = this;
+                if(newValue != '') {
+                    vm.flag_username_login = true;
+                }else {
+                    vm.flag_username_login = false;
+                }
+            },
+            password_login: function(newValue) {
+                const vm = this;
+                if(newValue != '') {
+                    vm.flag_password_login = true;
+                }else {
+                    vm.flag_password_login = false;
+                }
+            }
+        },
+        methods: {
+            register() {
+                const vm = this;
+                if(vm.flag_username && vm.flag_password && vm.flag_re_password && vm.flag_email) {
+                    if(confirm("確認註冊?")) {
+                        // 傳遞至後端
+                        var dataJSON = {};
+                        dataJSON["username"] = vm.username;
+                        dataJSON["password"] = vm.password;
+                        dataJSON["email"] = vm.email;
+                        console.log(JSON.stringify(dataJSON));
+
+                        $.ajax({
+                            type: "POST",
+                            url: "http://localhost:8080/project/project/signup_api.php",
+                            data: JSON.stringify(dataJSON),
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            success: function(data) {
+                                console.log(data);
+                                alert(data.message);
+                                location.href = "http://localhost:8080/project/project/index.php";
+                            },
+                            error: function() {
+                                alert("error- http://localhost:8080/project/project/signup_api.php")
+                            }
+                        });
+                    }
+                }else {
+                    alert("資料有錯誤!");
+                }
+            },
+            login() {
+                const vm = this;
+                if(vm.flag_username_login && vm.flag_password_login) {
+                    // 傳遞登入資料至後端API
+                    // {"username":"xx", "password":"xx"}
+                    // Send a POST request
+                    var dataJSON = {};// 物件
+                    dataJSON["username"] = vm.username_login;
+                    dataJSON["password"] = vm.password_login;
+                    console.log(JSON.stringify(dataJSON));
+                    axios({
+                        method: 'post',
+                        url: 'http://localhost:8080/project/project/login_api.php',
+                        data: JSON.stringify(dataJSON)
+                    }).then(function (response) {
+                        console.log(response);
+                        if (response.data.state) {
+                            alert(response.data.message);
+                            location.href = "http://localhost:8080/project/project/index.php";
+                        } else {
+                            alert(response.data.message);
+                        }
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
+                }else {
+                    alert("帳密不得為空白")
+                }
+            }
+        }
+    }
+    Vue.createApp(App).mount('#app');
 </script>
 </html>

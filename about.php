@@ -65,6 +65,7 @@
                 </div>
             </div>
         </section>
+
         <section id="s02">
             <div class="row align-items-center">
                 <div class="col-md-5 wow animate__backInLeft backImg" data-wow-duration="2s" data-wow-delay="0s" data-wow-iteration="1">
@@ -104,6 +105,30 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="s03">
+            <div class="coach">
+                <div class="wrapper">
+                    <img src="./images/coach/DSC06355.JPG" alt="" class="cover-image">
+                </div>
+                <img src="./images/png.png" alt="" class="title">
+                <img src="./images/coach/danny 筆刷.png" alt="" class="character">
+            </div>
+            <div class="coach">
+                <div class="wrapper">
+                    <img src="./images/coach/connie-bg.jpg" alt="" class="cover-image">
+                </div>
+                <img src="./images/png.png" alt="" class="title">
+                <img src="./images/coach/connie 筆刷.png" alt="" class="character">
+            </div>
+            <div class="coach">
+                <div class="wrapper">
+                    <img src="./images/coach/Copy of DSC_0967.jpg" alt="" class="cover-image">
+                </div>
+                <img src="./images/png.png" alt="" class="title">
+                <img src="./images/coach/DSC05377 筆刷.png" alt="" class="character">
             </div>
         </section>
     </main>

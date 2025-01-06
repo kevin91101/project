@@ -1,7 +1,7 @@
 <?php include 'head.php' ?>
 <body class="bg-cover" style="background-image:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 80%), url(images/24wepower/20240921_WE\ POWER-969.jpg);">
     <?php include 'header.php'?>
-    <main class="logIn">
+    <main class="logIn" id="app">
         <div class="container-fluid">
             <div class="row row01">
                 <div class="col-6 offset-6">
@@ -10,14 +10,16 @@
                             <h1 class="text-center fw-bold">LOG IN</h1>
                             <div class="mb-3">
                                 <label for="" class="form-label">Account</label>
-                                <input type="text" class="form-control" placeholder="Name/Email" required>
+                                <input type="text" class="form-control" :class="{ 'is-invalid' : !flag_username_login }" placeholder="Name/Email" v-model="username_login" required>
+                                <div class="invalid-feedback"></div>
                             </div>
                             <div class="mb-3">
                                 <label for="" class="form-label">Password</label>
-                                <input type="password" class="form-control" placeholder="Password" required>
+                                <input type="password" class="form-control" :class="{ 'is-invalid' : !flag_password_login }" placeholder="Password" v-model="password_login" required>
+                                <div class="invalid-feedback"></div>
                             </div>
                             <div class="text-center d-grid">
-                                <button class="btn btn-dark">LOG IN</button>
+                                <button class="btn btn-dark" @click="login">LOG IN</button>
                             </div>
                             <div class="d-flex">
                                 <p class="small mt-3">New to Ultilife?</p>

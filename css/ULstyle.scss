@@ -33,30 +33,32 @@ header{
 
 main.idx{
 
-    section#s02 h5{
-        font-family: "Protest Revolution", sans-serif;
-        font-style: normal;
-        font-size: 24px;
+    #s02{
+        h5{
+            font-family: "Protest Revolution", sans-serif;
+            font-style: normal;
+            font-size: 24px;
+        }
+
+        a, p{
+            // font-family: "Noto Sans TC", sans-serif;
+            // font-optical-sizing: auto;
+            // font-style: normal;
+            // font-weight: 900;
+            font-family: "Yuji Boku", serif;
+            font-weight: 900;
+            font-style: normal;
+        }
     }
 
-    section#s02 p, section#s02 a{
-    // font-family: "Noto Sans TC", sans-serif;
-    // font-optical-sizing: auto;
-    // font-style: normal;
-    // font-weight: 900;
-    font-family: "Yuji Boku", serif;
-    font-weight: 900;
-    font-style: normal;       
-    }
-
-    section#s03{
+    #s03{
 
         #imgprod{
             filter:drop-shadow(10px 7px 10px black);// 圖片邊緣陰影
         }
     }
 
-    section#s04{
+    #s04{
         padding: 20px;
         .container{
             .waterfall {
@@ -184,6 +186,100 @@ main.abt{
             background-position: -700px -100px;
             background-image: url(../images/新北/E1/Copy\ of\ DSC_1631.jpg);
             height: 600px;
+        }
+    }
+
+    #s03{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        .coach{
+            width: 300px;
+            height: 50vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding: 0 36px;
+            perspective: 2500px;
+            margin: 0 50px;
+            border-radius: 5px;
+        }
+
+        .cover-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .wrapper{
+            transition: all 0.5s;
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            border-radius: 5px;
+        }
+
+        .coach:hover .wrapper{
+            transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+            box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+            border-radius: 5px;
+        }
+
+        .wrapper::before, .wrapper::after{
+            content: "";
+            opacity: 0;
+            width: 100%;
+            height: 80px;
+            transition: all 0.5s;
+            position: absolute;
+            left: 0;
+            border-radius: 5px;
+        }
+
+        .wrapper::before{
+            top: 0;
+            height: 100%;
+            background-image: linear-gradient(
+                to top,
+                transparent 46%,
+                rgba(12, 13, 19, 0.5) 68%,
+                rgba(12, 13, 19) 97%
+            );
+            border-radius: 5px;
+        }
+
+        .coach:hover .wrapper::before, .wrapper::after{
+            opacity: 1;
+        }
+
+        .coach:hover .wrapper::after{
+            height: 120px;
+        }
+
+        .title{
+            width: 100%;
+            transition: transform 0.5s;
+        }
+
+        .coach:hover .title{
+            transform: translate3d(0%, -50px, 100px);
+        }
+
+        .character{
+            width: 100%;
+            opacity: 0;
+            transition: all 0.5s;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .coach:hover .character{
+            opacity: 1;
+            transform: translate3d(0%, -30%, 100px);
         }
     }
 }

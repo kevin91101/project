@@ -9,7 +9,7 @@ if (isset($_GET['mode'])){
     if ($mode=="delete"){
         $id=$_GET['id'];
         require 'db_open.php';
-        $sql="delete from category where Pid='$id'";
+        $sql="delete from category where Pca='$id'";
         if ($result= mysqli_query($link, $sql)) {
             // 沒照片
             // if (file_exists("image/$id.jpg")) {
@@ -85,11 +85,11 @@ if (isset($_GET['mode'])){
                                                 echo ++$rc;
                                                 ?>
                                             </th>
-                                            <td><?=$row['Pid']?></td>
+                                            <td><?=$row['Pca']?></td>
                                             <td><?=$row['Pname']?></td>
                                             <td></td>   
-                                            <td><a href="edit_album.php?Pid=<?=$row['Pid']?>"><button type="button" class="btn btn btn-info btn btn-flat btn-addon btn-sm m-b-5 m-l-5"> 
-                                            <i class="ti-pencil-alt"></i>修改</button></a><button type="button" onclick="javascript:deleteConfirm('album.php', '<?=$row['Pid']?>')" class="btn btn btn-default btn btn-flat btn-addon btn-sm m-b-5 m-l-5">
+                                            <td><a href="edit_album.php?Pca=<?=$row['Pca']?>"><button type="button" class="btn btn btn-info btn btn-flat btn-addon btn-sm m-b-5 m-l-5"> 
+                                            <i class="ti-pencil-alt"></i>修改</button></a><button type="button" onclick="javascript:deleteConfirm('album.php', '<?=$row['Pca']?>')" class="btn btn btn-default btn btn-flat btn-addon btn-sm m-b-5 m-l-5">
                                             <i class="ti-trash"></i>刪除</button></td>
                                             </tr>
                                         <?php

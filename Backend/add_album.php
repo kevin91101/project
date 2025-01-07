@@ -4,7 +4,7 @@ if (isset($_POST['pname'])) {
     $pname = $_POST['pname'];
     //將資料寫入product資料表
     include 'db_open.php';
-    $sql = "INSERT INTO category(Pid,Pname) values ('','$pname')";
+    $sql = "INSERT INTO category(Pca,Pname) values ('','$pname')";
     if($result = mysqli_query($link, $sql)){
         if($result){
         echo "<script>alert('新增成功');location.replace('album.php');</script>";

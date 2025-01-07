@@ -2,17 +2,19 @@
 if(isset($_POST['pid'])) {
     $id = $_POST['pid'];
     $title = $_POST['ptitle'];
+    $category = $_POST['pca'];
     include 'db_open.php';
-    $sql = "INSERT INTO photos(Pid, Ptitle) VALUES ('$id', '$title')";
+    $sql = "INSERT INTO photos(Pid, Ptitle, Pca) VALUES ('$id', '$title', '$category')";
     if(mysqli_query($link, $sql)) {
         if(isset($_FILES['file'])) {
-            $extentsion = strtolower(pathinfo($_FILES['file']['name'], PATHINFO_EXTENTSION));
-            if($extentsion == "jpg") {
-                $name = $title.".".$extentsion;
-                copy($_FILES['file']['tmp_name'],"images/$name");
+            $extension = strtolower(pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION));
+            echo $extension;
+            if($extension == "jpg") {
+                $name = $title.".".$extension;
+                copy($_FILES['file']['tmp_name'],"images/photostest/$name");
             }
         }
-        echo "<script>alert('新增成功!');</script>";
+        echo "<script>alert('新增成功!');location.replace('photos.php');</script>";
     }else {
         echo "<script>alert('新增失敗!');</script>";
     }
@@ -20,7 +22,7 @@ if(isset($_POST['pid'])) {
 ?>
 <body class="bg-colorUL02">
     <?php include 'header.php' ?>
-    <main class="addp h-100">
+    <main class="addp h-auto">
         <div class="horizontal-form">
             <form method="post" enctype="multipart/form-data" action="add_photos.php" class="form-horizontal d-flex flex-column justify-content-center align-items-center">
                 <div class="mb-3 text-white" style="display: none;">
@@ -35,26 +37,28 @@ if(isset($_POST['pid'])) {
                     <label for="" class="form-label">類別</label>
                     <?php
                     include 'db_open.php';
-                    $sql = "SELECT * FROM category ORDER BY Pid";
+                    $sql = "SELECT * FROM category ORDER BY Pca";
                     $result = mysqli_query($link, $sql);
                     ?>
-                    <select name="pid" size="1" id="" class="form-select">
+                    <select name="pca" size="1" id="" class="form-select">
                         <?php
                         while($row = mysqli_fetch_assoc($result)) {
-                            echo "<option value=\"".$row['pid']."\">".$row['Pname']."</option>";
+                            echo "<option value=\"".$row['Pca']."\">".$row['Pname']."</option>";
                         }
                         ?>
                     </select>
                 </div>
-                <div class="upFile">
+                <div class="upFile mb-3">
                     <div class="rBackImg"></div>
                     <div class="upFileLogo">
                         <p>+</p>
-                        <input type="file" onchange="upFile(this)" multiple>
+                        <input type="file" name="file" onchange="upFile(this)" multiple>
                     </div>
                 </div>
-                <button class="btn text-white" type="submit">新增</button>
-                <button class="btn text-white">取消</button>
+                <div class="addBtn">
+                    <button class="btn btn-primary text-white" type="submit">新增</button>
+                    <button class="btn btn-danger text-white">取消</button>
+                </div>
             </form>
         </div>
     </main>

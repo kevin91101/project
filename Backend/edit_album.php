@@ -1,18 +1,18 @@
 <?php include 'header.php';
     include 'db_open.php';
-    if (isset($_GET['Pid'])) {
-        $id = $_GET['Pid'];
+    if (isset($_GET['Pca'])) {
+        $id = $_GET['Pca'];
         // $sql = "select * from product where pkey='$id'";
-        $sql = "SELECT * from category where Pid='$id'";
+        $sql = "SELECT * from category where Pca='$id'";
         $result=mysqli_query($link,$sql);
         $row=mysqli_fetch_assoc($result);
         $pname = $row['Pname'];
     }
     else 
-    if (isset($_POST['pid'])){
-        $id = $_POST['pid'];
+    if (isset($_POST['pca'])){
+        $id = $_POST['pca'];
         $pname = $_POST['pname'];
-        $sql = "UPDATE category set Pname='$pname' WHERE Pid='$id'";
+        $sql = "UPDATE category set Pname='$pname' WHERE Pca='$id'";
         if (mysqli_query($link,$sql)){
             echo "<script>alert('修改成功');location.replace('album.php');</script>";
         }
@@ -39,7 +39,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label">相簿類別編號：</label>
                                             <div class="col-sm-10">
-                                                <input type="text" name="pid" class="form-control" value="<?=$id?>" placeholder="相簿類別編號" readonly="readonly">
+                                                <input type="text" name="pca" class="form-control" value="<?=$id?>" placeholder="相簿類別編號" readonly="readonly">
                                             </div>
                                         </div>
                                         <div class="form-group">

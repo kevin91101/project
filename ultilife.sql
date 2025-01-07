@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2025-01-07 17:10:40
+-- 產生時間： 2025-01-07 18:21:43
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `category` (
-  `Pid` int(7) NOT NULL,
+  `Pca` int(7) NOT NULL,
   `Pname` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -36,7 +36,7 @@ CREATE TABLE `category` (
 -- 傾印資料表的資料 `category`
 --
 
-INSERT INTO `category` (`Pid`, `Pname`) VALUES
+INSERT INTO `category` (`Pca`, `Pname`) VALUES
 (1, '2018'),
 (2, '2019'),
 (3, '2020'),
@@ -60,18 +60,26 @@ INSERT INTO `category` (`Pid`, `Pname`) VALUES
 
 CREATE TABLE `photos` (
   `Pid` int(7) NOT NULL,
-  `Ptitle` varchar(30) NOT NULL
+  `Ptitle` varchar(30) NOT NULL,
+  `Pca` int(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- 傾印資料表的資料 `photos`
 --
 
-INSERT INTO `photos` (`Pid`, `Ptitle`) VALUES
-(1, 'danny'),
-(2, 'danny'),
-(3, 'connie舉重'),
-(4, 'connie舉重');
+INSERT INTO `photos` (`Pid`, `Ptitle`, `Pca`) VALUES
+(1, 'danny', 0),
+(2, 'danny', 0),
+(3, 'connie舉重', 0),
+(4, 'connie舉重', 0),
+(5, 'lion', 0),
+(7, 'lion', 0),
+(8, 'danny', 7),
+(9, 'danny', 1),
+(10, 'danny', 1),
+(11, 'danny', 7),
+(12, 'danny', 7);
 
 -- --------------------------------------------------------
 
@@ -124,7 +132,7 @@ INSERT INTO `ulmember` (`Ulid`, `Ulname`, `Ulpasswd`, `Ulemail`, `Created_at`) V
 -- 資料表索引 `category`
 --
 ALTER TABLE `category`
-  ADD PRIMARY KEY (`Pid`);
+  ADD PRIMARY KEY (`Pca`);
 
 --
 -- 資料表索引 `photos`
@@ -152,13 +160,13 @@ ALTER TABLE `ulmember`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `category`
 --
 ALTER TABLE `category`
-  MODIFY `Pid` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `Pca` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `Pid` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `Pid` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `stmember`

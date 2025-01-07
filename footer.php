@@ -23,7 +23,7 @@
         $a = explode("/", $_SERVER["SCRIPT_NAME"]);
         $tempFile = $a[count($a) - 1];
         ?>
-        <div <?php if($tempFile == 'about.php' || $tempFile == 'index.php') {
+        <div <?php if($tempFile == 'about.php' || $tempFile == 'index.php' || $tempFile == 'photos.php' || $tempFile == 'add_photos.php') {
             echo 'class="fix_ri"';
         }?>>
             <a href="https://www.facebook.com/CFUltiLife/?locale=zh_TW" target="_blank">

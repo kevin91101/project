@@ -113,9 +113,8 @@
                 <div class="wrapper">
                     <img src="./images/coach/DSC06355.JPG" alt="" class="cover-image">
                 </div>
-                <!-- <img src="./images/png.png" alt="" class="title"> -->
-                <!-- <h1 class="title text-center text-white fw-900">DANNY</h1> -->
-                <div class="text-center title">DANNY</div>
+                <img src="./images/png.png" alt="" class="title">
+                <!-- <div class="text-center title">DANNY</div> -->
                 <img src="./images/coach/danny 筆刷.png" alt="" class="character">
             </div>
             <div class="coach wow animate__animated animate__zoomIn">

@@ -32,6 +32,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">group</a></li>
                         <li><a class="dropdown-item" href="#">one to one</a></li>
+                        <li><a class="dropdown-item" href="photos.php">photos</a></li>
                         <li>
                         <hr class="dropdown-divider">
                         </li>

@@ -59,4 +59,8 @@
 
 .bg-colorUL01 {
   background-color: var(--ULcolorOr);
+}
+
+.bg-colorUL02 {
+  background-color: var(--ULcolorBl01);
 }/*# sourceMappingURL=ULcolor.css.map */

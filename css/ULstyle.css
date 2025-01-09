@@ -131,6 +131,8 @@ main.abt #s01 .swiper-button-next::after, main.abt #s01 .swiper-button-prev::aft
   align-items: center;
   justify-content: center;
   width: 500%;
+  height: 620px;
+  padding: 200px;
   color: #fff;
   text-align: center;
   background: 0 0;
@@ -228,6 +230,9 @@ main.abt #s03 .coach:hover .character {
   transform: translate3d(0%, -30%, 100px);
 }
 
+main.addp {
+  height: 85vh;
+}
 main.addp .upFile {
   width: 100px;
   height: 100px;

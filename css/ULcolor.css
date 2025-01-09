@@ -24,8 +24,8 @@
 }
 
 .btn-outline-ULBl {
-  --bs-btn-color: var(--ULcolorBl01);
-  --bs-btn-border-color: var(--ULcolorBl01);
+  --bs-btn-color: #07457c;
+  --bs-btn-border-color: #07457c;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: var(--ULcolorBl01);
   --bs-btn-hover-border-color: var(--ULcolorBl01);
@@ -42,7 +42,7 @@
 
 .btn-ULBl {
   --bs-btn-color: #000;
-  --bs-btn-bg: var(--ULcolorBl01);
+  --bs-btn-bg: #07457c;
   --bs-btn-border-color: var(--ULcolorBl01);
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: var(--ULcolorBl02);
@@ -54,7 +54,7 @@
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
   --bs-btn-disabled-bg: var(--ULcolorBl01);
-  --bs-btn-disabled-border-color: var(--ULcolorBl01) ;
+  --bs-btn-disabled-border-color: var(--ULcolorBl01);
 }
 
 .bg-colorUL01 {

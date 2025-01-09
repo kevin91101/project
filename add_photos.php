@@ -20,11 +20,11 @@ if(isset($_POST['pid'])) {
     }
 }
 ?>
-<body class="bg-colorUL02">
+<body class="bg-dark">
     <?php include 'header.php' ?>
-    <main class="addp h-auto">
-        <div class="horizontal-form">
-            <form method="post" enctype="multipart/form-data" action="add_photos.php" class="form-horizontal d-flex flex-column justify-content-center align-items-center">
+    <main class="addp position-relative">
+        <div class="horizontal-form position-absolute top-50 start-50 translate-middle">
+            <form method="post" enctype="multipart/form-data" action="add_photos.php" class="form-horizontal d-flex flex-column justify-content-center align-items-center my-5">
                 <div class="mb-3 text-white" style="display: none;">
                     <label for="" class="form-label">照片編號:</label>
                     <input type="text" name="pid" class="form-control">
@@ -52,12 +52,14 @@ if(isset($_POST['pid'])) {
                     <div class="rBackImg"></div>
                     <div class="upFileLogo">
                         <p>+</p>
-                        <input type="file" name="file" onchange="upFile(this)" multiple>
+                        <input type="file" id="imgInp" name="file" multiple>
                     </div>
                 </div>
+                <img id="imgShw" src="#" alt="" class="mb-3 w-100">
                 <div class="addBtn">
-                    <button class="btn btn-primary text-white" type="submit">新增</button>
-                    <button class="btn btn-danger text-white">取消</button>
+                    <button class="btn btn-outline-ULOr" type="submit">新增</button>
+                    <button class="btn btn-outline-ULBl" type="reset" id="imgRe">重置</button>
+                    <a href="photos.php"><button class="btn btn-outline-ULOr" type="button">上一頁</button></a>
                 </div>
             </form>
         </div>

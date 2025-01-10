@@ -26,13 +26,13 @@
             <div <?php if ($tempFile == 'about.php' || $tempFile == 'index.php' || $tempFile == 'photos.php' || $tempFile == 'add_photos.php') {
                         echo 'class="fix_ri"';
                     } ?>>
-                <a href="https://www.facebook.com/CFUltiLife/?locale=zh_TW" target="_blank">
+                <a href="https://www.facebook.com/CFUltiLife/?locale=zh_TW" class="fb hide" target="_blank">
                     <img src="https://pic03.eapple.com.tw/samuraicf/icon_fb.png">
                 </a>
-                <a href="https://www.instagram.com/crossfit_ultilife/" target="_blank">
+                <a href="https://www.instagram.com/crossfit_ultilife/" class="ig hide" target="_blank">
                     <img src="https://pic03.eapple.com.tw/samuraicf/icon_ig.png">
                 </a>
-                <a href="https://line.me/R/ti/p/@xxy3755s" target="_blank">
+                <a href="https://line.me/R/ti/p/@xxy3755s" class="line hide" target="_blank">
                     <img src="https://pic03.eapple.com.tw/samuraicf/icon_line.png">
                 </a>
             </div>

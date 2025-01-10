@@ -23,18 +23,30 @@ if(isset($_POST['pid'])) {
 <body class="bg-dark">
     <?php include 'header.php' ?>
     <main class="addp position-relative">
-        <div class="horizontal-form position-absolute top-50 start-50 translate-middle">
+        <div class="horizontal-form position-absolute top-50 start-50 translate-middle w-75">
             <form method="post" enctype="multipart/form-data" action="add_photos.php" class="form-horizontal d-flex flex-column justify-content-center align-items-center my-5">
-                <div class="mb-3 text-white" style="display: none;">
+                <div class="mb-3 row w-50" style="display: none;">
+                    <label for="inputPassword" class="col-xxl-2 col-form-label text-white">照片編號:</label>
+                    <div class="col-xxl-10">
+                        <input type="text" name="pid" class="form-control" id="inputPassword">
+                    </div>
+                </div>
+                <div class="mb-3 row w-50">
+                    <label for="inputPassword" class="col-xxl-2 col-form-label text-white">照片名稱:</label>
+                    <div class="col-xxl-10">
+                        <input type="text" name="ptitle" class="form-control" id="inputPassword">
+                    </div>
+                </div>
+                <!-- <div class="mb-3 text-white" style="display: none;">
                     <label for="" class="form-label">照片編號:</label>
                     <input type="text" name="pid" class="form-control">
                 </div>
                 <div class="mb-3 text-white">
                     <label for="" class="form-label">照片名稱:</label>
                     <input type="text" name="ptitle" class="form-control">
-                </div>
-                <div class="mb-3 text-white">
-                    <label for="" class="form-label">類別</label>
+                </div> -->
+                <div class="mb-3 text-white w-25 text-center">
+                    <label for="" class="form-label">類別:</label>
                     <?php
                     include 'db_open.php';
                     $sql = "SELECT * FROM category ORDER BY Pca";
@@ -55,7 +67,7 @@ if(isset($_POST['pid'])) {
                         <input type="file" id="imgInp" name="file" multiple>
                     </div>
                 </div>
-                <img id="imgShw" src="#" alt="" class="mb-3 w-100">
+                <img id="imgShw" src="#" alt="" class="mb-3" style="max-height: 60vh;">
                 <div class="addBtn">
                     <button class="btn btn-outline-ULOr" type="submit">新增</button>
                     <button class="btn btn-outline-ULBl" type="reset" id="imgRe">重置</button>

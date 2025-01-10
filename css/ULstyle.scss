@@ -370,7 +370,7 @@ main.logIn{
     bottom: 45px;
     z-index: 600;
     transform: translateX(0%);
-    transition: transform 0.2s;
+    transition: transform 1.7s;
 
     .goTopBtn{
         background-color: transparent;
@@ -410,18 +410,42 @@ footer{
         z-index: 999;
         text-align: center;
 
+        
         a{
             display: inline-block;
             margin-bottom: 10px;
             color: #444;
             text-decoration: none;
             background-color: transparent;
+            
+            &.fb{
+                transform: translateX(0%);
+                transition: transform 0.2s;
+                &.hide{
+                    transform: translateX(200%);
+                }
+            }
+            &.ig{
+                transform: translateX(0%);
+                transition: transform 0.7s;
+                &.hide{
+                    transform: translateX(200%);
+                }
+            }
+            &.line{
+                transform: translateX(0%);
+                transition: transform 1.2s;
+                &.hide{
+                    transform: translateX(200%);
+                }
+            }
 
             img{
                 opacity: 1;
                 width: 100%;
             }
         }
+
     }
 }
 

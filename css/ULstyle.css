@@ -302,7 +302,7 @@ main.logIn .col-6 .login .logB a {
   bottom: 45px;
   z-index: 600;
   transform: translateX(0%);
-  transition: transform 0.2s;
+  transition: transform 1.7s;
 }
 .goTop .goTopBtn {
   background-color: transparent;
@@ -344,6 +344,27 @@ footer .fix_ri a {
   color: #444;
   text-decoration: none;
   background-color: transparent;
+}
+footer .fix_ri a.fb {
+  transform: translateX(0%);
+  transition: transform 0.2s;
+}
+footer .fix_ri a.fb.hide {
+  transform: translateX(200%);
+}
+footer .fix_ri a.ig {
+  transform: translateX(0%);
+  transition: transform 0.7s;
+}
+footer .fix_ri a.ig.hide {
+  transform: translateX(200%);
+}
+footer .fix_ri a.line {
+  transform: translateX(0%);
+  transition: transform 1.2s;
+}
+footer .fix_ri a.line.hide {
+  transform: translateX(200%);
 }
 footer .fix_ri a img {
   opacity: 1;

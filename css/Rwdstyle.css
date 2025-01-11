@@ -1,0 +1,5 @@
+@media screen and (max-width: 480px) {
+  main.idx #s02 .card-body p {
+    display: none;
+  }
+}/*# sourceMappingURL=Rwdstyle.css.map */

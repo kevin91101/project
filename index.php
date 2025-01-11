@@ -31,31 +31,31 @@
         <section id="s02" class="my-3">
             <div class="container">
                 <div class="row d-flex justify-content-around">
-                    <div class="col-3 d-flex justify-content-center">
+                    <div class="col-sm-3 mb-3 d-flex justify-content-center">
                         <div class="card" style="width: 20rem;">
                             <img src="images/24超體/運動員進場/DSC08564.JPG" class="card-img-top" alt="...">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">2024 超級體能聯賽</h5>
+                                <h5 class="card-title text-center">2024 超級體能聯賽</h5>
                                 <p class="card-text">期盼透過推廣此一運動，促使大眾走出門參與各式活動，舒緩生活各式壓力及提供喘息空間，進而增進樂觀、積極與進取的人生態度。</p>
                                 <a href="#" class="btn btn-dark mt-auto">更多相片</a>
                             </div>
                         </div>            
                     </div>
-                    <div class="col-3 d-flex justify-content-center">
+                    <div class="col-sm-3 mb-3 d-flex justify-content-center">
                         <div class="card" style="width: 20rem;">
                             <img src="images/新北/E1/Copy of DSC_1652.jpg" class="card-img-top" alt="...">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">2024 全國綜合體能大賽</h5>
+                                <h5 class="card-title text-center">2024 全國綜合體能大賽</h5>
                                 <p class="card-text">第一場全民賽事，超過140組雙人組合共襄盛舉，協力挑戰！</p>
                                 <a href="#" class="btn btn-dark mt-auto">更多相片</a>
                             </div>
                         </div>            
                     </div>
-                    <div class="col-3 d-flex justify-content-center">
+                    <div class="col-sm-3 mb-3 d-flex justify-content-center">
                         <div class="card" style="width: 20rem;">
                             <img src="images/24wepower/20240921_WE POWER-39.jpg" class="card-img-top" alt="...">
                             <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">2024 WEPOWER</h5>
+                                <h5 class="card-title text-center">2024 WEPOWER</h5>
                                 <p class="card-text">多元的體能挑戰、推廣CrossFit運動文化，適合任何人參加的體能賽事。</p>
                                 <a href="#" class="btn btn-dark mt-auto">更多相片</a>
                             </div>

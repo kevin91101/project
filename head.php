@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/ULcolor.css">
     <link rel="stylesheet" href="css/ULstyle.css">
+    <link rel="stylesheet" href="css/Rwdstyle.css">
 
     <link rel="shortcut icon" href="images/5-318.png">
     <link rel="bookmark" href="images/圖層 5反白318.png">

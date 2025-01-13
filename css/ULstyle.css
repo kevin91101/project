@@ -24,6 +24,9 @@ header .LogIn button a {
   line-height: 38px;
 }
 
+main.idx #s01 .imgS01 {
+  height: 90vh;
+}
 main.idx #s02 h5 {
   font-family: "Protest Revolution", sans-serif;
   font-style: normal;

@@ -1,10 +1,27 @@
 @media screen and (max-width:480px) {
+    header {
+        .LogIn {
+            margin-bottom: 1rem;
+        }
+    }
     main.idx {
+        #s01 {
+            .imgS01 {
+                height: 50vh;
+            }
+        }
+
         #s02 {
             .card-body {
                 p {
                     display: none;
                 }
+            }
+        }
+
+        #s03 {
+            .s03_text {
+                display: none;
             }
         }
     }

@@ -3,12 +3,20 @@
     margin-bottom: 1rem;
   }
   main.idx #s01 .imgS01 {
-    height: 50vh;
+    height: 30vh;
   }
   main.idx #s02 .card-body p {
     display: none;
   }
+  main.idx #s03 #imgprod {
+    width: 90%;
+    height: 15vh;
+  }
   main.idx #s03 .s03_text {
     display: none;
+  }
+  main.idx #s04 .container .waterfall {
+    -moz-column-count: 3;
+         column-count: 3;
   }
 }/*# sourceMappingURL=Rwdstyle.css.map */

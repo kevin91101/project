@@ -7,7 +7,7 @@
     main.idx {
         #s01 {
             .imgS01 {
-                height: 50vh;
+                height: 30vh;
             }
         }
 
@@ -20,8 +20,20 @@
         }
 
         #s03 {
+            #imgprod {
+                width: 90%;
+                height: 15vh;
+            }
             .s03_text {
                 display: none;
+            }
+        }
+
+        #s04 {
+            .container {
+                .waterfall {
+                    column-count: 3;
+                }
             }
         }
     }

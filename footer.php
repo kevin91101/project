@@ -25,7 +25,9 @@
             ?>
             <div <?php if ($tempFile == 'about.php' || $tempFile == 'index.php' || $tempFile == 'photos.php' || $tempFile == 'add_photos.php') {
                         echo 'class="fix_ri"';
-                    } ?>>
+                    }else {
+                        echo 'class="d-none"';
+                    }?>>
                 <a href="https://www.facebook.com/CFUltiLife/?locale=zh_TW" class="fb hide" target="_blank">
                     <img src="https://pic03.eapple.com.tw/samuraicf/icon_fb.png">
                 </a>

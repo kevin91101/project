@@ -68,28 +68,28 @@
         <section id="s03" class="bg-colorUL01">
             <div class="container">
                 <div class="row text-white py-5">
-                    <div class="col-md-4 text-center">
+                    <div class="col-4 text-center">
                         <!-- <i class="fa-solid fa-person-falling fa-8x text-black my-3 wow animate__rollIn" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i> -->
-                        <img id="imgprod" src="./images/項目/g.png" alt="" style="width: 100%; height: 40vh;">
+                        <img id="imgprod" src="./images/項目/g.png" alt="">
                         <!-- <div class="text h-100"> -->
-                            <div class="h3 fw-900 text-muted">體操</div>
+                            <div class="h2 fw-900 text-black my-3">體操</div>
                             <p class="s03_text">
                                 體操是一項結合力量、柔韌性、平衡和協調性的運動，涵蓋地板、吊環、鞍馬、單槓等多種項目。透過練習體操，不僅能增強身體素質，還能提升專注力與毅力，適合各年齡層參與，是一項兼具挑戰與美感的運動。
                             </p>
                         <!-- </div> -->
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-4 text-center">
                         <!-- <i class="fa-solid fa-dumbbell fa-8x text-black my-3 wow animate__swing" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i> -->
-                        <img id="imgprod" src="./images/項目/w.png" alt="" style="width: 100%; height: 40vh;">
-                        <div class="h3 fw-900 text-muted">舉重</div>
+                        <img id="imgprod" src="./images/項目/w.png" alt="">
+                        <div class="h2 fw-900 text-black my-3">舉重</div>
                         <p class="s03_text">
                             舉重是一項力量型運動，運動員透過抓舉與挺舉兩種技術，將杠鈴從地面提升至頭頂。此運動強調全身協調與爆發力，能有效增強肌肉力量、核心穩定性和體能。舉重不僅是競技運動，還是健身訓練的重要項目之一，適合追求力量與健康的人參與。
                         </p>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-4 text-center">
                         <!-- <i class="fa-solid fa-person-swimming fa-8x text-black my-3 wow animate__shakeX" data-wow-duration="1s" data-wow-delay="0s" data-wow-iteration="infinite"></i> -->
-                        <img id="imgprod" src="./images/項目/r.png" alt="" style="width: 100%; height: 40vh;">
-                        <div class="h3 fw-900 text-muted">有氧</div>
+                        <img id="imgprod" src="./images/項目/r.png" alt="">
+                        <div class="h2 fw-900 text-black my-3">有氧</div>
                         <p class="s03_text">
                             有氧運動是一種持續、中等強度的運動形式，如跑步、騎車、游泳等，主要透過提高心率促進心肺功能增強。此運動有助於燃燒脂肪、提升耐力、減壓及改善整體健康，適合不同年齡層和體能水平的人參與。有氧運動簡單易行，是保持健康生活的重要方式之一。
                         </p>

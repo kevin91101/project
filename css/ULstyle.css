@@ -24,20 +24,20 @@ header .LogIn button a {
   line-height: 38px;
 }
 
+main.idx a, main.idx p, main.idx .h2, main.idx h5 {
+  font-family: "LXGW WenKai TC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
 main.idx #s01 .imgS01 {
   height: 90vh;
 }
 main.idx #s02 h5 {
-  font-family: "Protest Revolution", sans-serif;
-  font-style: normal;
   font-size: 24px;
 }
-main.idx #s02 a, main.idx #s02 p {
-  font-family: "Yuji Boku", serif;
-  font-weight: 900;
-  font-style: normal;
-}
 main.idx #s03 #imgprod {
+  width: 100%;
+  height: 40vh;
   filter: drop-shadow(10px 7px 10px black);
 }
 main.idx #s04 {

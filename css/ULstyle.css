@@ -29,7 +29,10 @@ main.idx a, main.idx p, main.idx .h2, main.idx h5 {
   font-weight: 900;
   font-style: normal;
 }
-main.idx #s01 .imgS01 {
+main.idx #s01 .carousel-fade {
+  z-index: 0;
+}
+main.idx #s01 .carousel-fade .imgS01 {
   height: 90vh;
 }
 main.idx #s02 h5 {
@@ -80,7 +83,7 @@ main.abt #s01 h1 {
 }
 main.abt #s01 .swiper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 main.abt #s01 .swiper-slide {
   text-align: center;
@@ -328,9 +331,27 @@ footer {
   position: sticky;
   top: 100vh;
 }
-footer .col-2 {
+footer p {
+  font-family: "LXGW WenKai TC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+footer .footerLogo {
+  position: relative;
   height: 100px;
-  width: 250px;
+}
+footer .footerLogo img {
+  width: 50%;
+}
+footer .footerText {
+  position: relative;
+  height: 100px;
+}
+footer .footerText p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 footer .fix_ri {
   width: 50px;
@@ -338,7 +359,6 @@ footer .fix_ri {
   position: fixed;
   bottom: 95px;
   right: 23px;
-  z-index: 999;
   text-align: center;
 }
 footer .fix_ri a {

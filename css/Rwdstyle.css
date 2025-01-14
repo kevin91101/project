@@ -2,7 +2,7 @@
   header .LogIn {
     margin-bottom: 1rem;
   }
-  main.idx #s01 .imgS01 {
+  main.idx #s01 .carousel-fade .imgS01 {
     height: 30vh;
   }
   main.idx #s02 .card-body p {
@@ -18,5 +18,37 @@
   main.idx #s04 .container .waterfall {
     -moz-column-count: 3;
          column-count: 3;
+  }
+  main.abt #s01 .swiper {
+    height: 100%;
+  }
+  main.abt #s01 .mySwiper2 {
+    height: 80%;
+  }
+  main.abt #s01 .mySwiper {
+    height: 20%;
+  }
+  main.abt #s01 .swiper-button-next::after, main.abt #s01 .swiper-button-prev::after {
+    padding: 50px;
+  }
+  .goTop i {
+    font-size: 30px;
+  }
+  footer .footerLogo {
+    height: 70px;
+  }
+  footer .footerLogo img {
+    width: 100%;
+  }
+  footer .footerText {
+    height: 60px;
+  }
+  footer .footerText p {
+    text-wrap: nowrap;
+  }
+  footer .fix_ri {
+    width: 30px;
+    right: 24px;
+    bottom: 80px;
   }
 }/*# sourceMappingURL=Rwdstyle.css.map */

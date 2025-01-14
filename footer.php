@@ -1,22 +1,19 @@
     <footer class="bg-black" style="min-height: 5vh;">
         <div class="container">
-            <div class="row ftcontent align-items-center justify-content-between text-white">
-                <div class="col-2 text-center align-content-center">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/png-反白.png" width="100%" alt="">
+            <div class="row">
+                <div class="col-12 footerLogo">
+                    <a href="index.php" class="position-absolute top-50 start-50 translate-middle text-center">
+                        <img src="images/png-反白.png" alt="">
                     </a>
                 </div>
-                <div class="col-2 text-center d-flex flex-column justify-content-center">
-                    <div class="text-secondary">電話:</div>
-                    <div>04-22613980</div>
+                <div class="col-sm-4 footerText">
+                    <p class="translate-middle text-center text-white"><span class="text-muted">電話:</span><br>04-22613980</p>
                 </div>
-                <div class="col-2 text-center d-flex flex-column justify-content-center">
-                    <div><span class="text-secondary">信箱:</span><br>
-                        cfultilife@gmail.com</div>
+                <div class="col-sm-4 footerText">
+                    <p class="translate-middle text-center text-white"><span class="text-muted">信箱:</span><br>cfultilife@gmail.com</p>
                 </div>
-                <div class="col-2 text-center d-flex flex-column justify-content-center">
-                    <div class="text-secondary">地址:</div>
-                    <div class="">台中市北屯區敦富五街41號</div>
+                <div class="col-sm-4 footerText">
+                    <p class="translate-middle text-center text-white"><span class="text-muted">地址:</span><br>台中市北屯區敦富五街41號</p>
                 </div>
             </div>
             <?php

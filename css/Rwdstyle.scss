@@ -43,14 +43,25 @@
 
     main.abt {
         #s01 {
-            .swiper {
-                height: 100%;
-            }
             .mySwiper2 {
-                height: 80%;
+                .swiper-slide {
+                    img {
+                        height: 30vh;
+                    }
+                }
             }
+
             .mySwiper {
-                height: 20%;
+                .swiper-slide {
+                    img {
+                        height: 7vh;
+                    }
+
+                    h1 {
+                        font-weight: 700;
+                        font-size: 1.3rem;
+                    }
+                }
             }
 
             .swiper-button-next::after, .swiper-button-prev::after {
@@ -75,9 +86,6 @@
 
         .footerText {
             height: 60px;
-            p {
-                text-wrap: nowrap;
-            }
         }
 
         .fix_ri {

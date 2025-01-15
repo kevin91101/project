@@ -1,10 +1,11 @@
 <?php include 'head.php';
-if(isset($_POST['pid'])) {
+if (isset($_POST['pid'])) {
     $id = $_POST['pid'];
     $title = $_POST['ptitle'];
     $category = $_POST['pca'];
     include 'db_open.php';
     $sql = "INSERT INTO photos(Pid, Ptitle, Pca) VALUES ('$id', '$title', '$category')";
+    // 單張上傳
     if(mysqli_query($link, $sql)) {
         if(isset($_FILES['file'])) {
             $extension = strtolower(pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION));
@@ -18,8 +19,50 @@ if(isset($_POST['pid'])) {
     }else {
         echo "<script>alert('新增失敗!');</script>";
     }
+
+    // 多張上傳
+    // if (mysqli_query($link, $sql)) {
+
+    //     // 檢查是否有多張照片上傳
+    //     if (isset($_FILES['file'])) {
+    //         $totalFiles = count($_FILES['file']['name']);
+    //         $uploadSuccess = 0; // 計數成功上傳的檔案數量
+    //         $uploadErrors = []; // 收集失敗資訊
+
+    //         for ($i = 0; $i < $totalFiles; $i++) {
+    //             $extension = strtolower(pathinfo($_FILES['file']['name'][$i], PATHINFO_EXTENSION));
+
+    //             if ($extension == "jpg" || $extension == "jpeg" || $extension == "png") {
+    //                 $name = $title . "_" . ($i + 1) . "." . $extension;
+    //                 $filePath = "images/photostest/$name";
+
+    //                 if (move_uploaded_file($_FILES['file']['tmp_name'][$i], $filePath)) {
+    //                     $uploadSuccess++;
+    //                 } else {
+    //                     $uploadErrors[] = $_FILES['file']['name'][$i] . " 上傳失敗";
+    //                 }
+    //             } else {
+    //                 $uploadErrors[] = $_FILES['file']['name'][$i] . " 的檔案類型無效";
+    //             }
+    //         }
+
+    //         // 顯示上傳結果
+    //         if ($uploadSuccess > 0) {
+    //             echo "<script>alert('成功上傳 $uploadSuccess 張照片!');</script>";
+    //         }
+
+    //         if (!empty($uploadErrors)) {
+    //             echo "<script>alert('部分照片上傳失敗: " . implode(', ', $uploadErrors) . "');</script>";
+    //         }
+    //     }
+
+    //     echo "<script>location.replace('photos.php');</script>";
+    // } else {
+    //     echo "<script>alert('新增失敗!');</script>";
+    // }
 }
 ?>
+
 <body class="bg-dark">
     <?php include 'header.php' ?>
     <main class="addp position-relative">
@@ -54,8 +97,8 @@ if(isset($_POST['pid'])) {
                     ?>
                     <select name="pca" size="1" id="" class="form-select">
                         <?php
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo "<option value=\"".$row['Pca']."\">".$row['Pname']."</option>";
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<option value=\"" . $row['Pca'] . "\">" . $row['Pname'] . "</option>";
                         }
                         ?>
                     </select>
@@ -64,7 +107,7 @@ if(isset($_POST['pid'])) {
                     <div class="rBackImg"></div>
                     <div class="upFileLogo">
                         <p>+</p>
-                        <input type="file" id="imgInp" name="file" multiple>
+                        <input type="file" id="imgInp" name="file[]" multiple>
                     </div>
                 </div>
                 <img id="imgShw" src="#" alt="" class="mb-3" style="max-height: 60vh;">
@@ -79,8 +122,8 @@ if(isset($_POST['pid'])) {
 
     <div class="goTop hide">
         <a href="#" class="goTopBtn jq-goTop">
-        <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
+            <i class="fa-solid fa-circle-chevron-up fa-3x"></i>
         </a>
     </div>
 
-<?php include 'footer.php' ?>
+    <?php include 'footer.php' ?>

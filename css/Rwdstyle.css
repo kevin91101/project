@@ -19,14 +19,15 @@
     -moz-column-count: 3;
          column-count: 3;
   }
-  main.abt #s01 .swiper {
-    height: 100%;
+  main.abt #s01 .mySwiper2 .swiper-slide img {
+    height: 30vh;
   }
-  main.abt #s01 .mySwiper2 {
-    height: 80%;
+  main.abt #s01 .mySwiper .swiper-slide img {
+    height: 7vh;
   }
-  main.abt #s01 .mySwiper {
-    height: 20%;
+  main.abt #s01 .mySwiper .swiper-slide h1 {
+    font-weight: 700;
+    font-size: 1.3rem;
   }
   main.abt #s01 .swiper-button-next::after, main.abt #s01 .swiper-button-prev::after {
     padding: 50px;
@@ -42,9 +43,6 @@
   }
   footer .footerText {
     height: 60px;
-  }
-  footer .footerText p {
-    text-wrap: nowrap;
   }
   footer .fix_ri {
     width: 30px;

@@ -122,10 +122,21 @@ main.abt #s01 .mySwiper .swiper-slide {
 main.abt #s01 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
-main.abt #s01 .swiper-slide img {
+main.abt #s01 .mySwiper2 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 70vh;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main.abt #s01 .mySwiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 20vh;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -137,7 +148,7 @@ main.abt #s01 .swiper-button-next::after, main.abt #s01 .swiper-button-prev::aft
   align-items: center;
   justify-content: center;
   width: 500%;
-  height: 620px;
+  height: 70vh;
   padding: 200px;
   color: #fff;
   text-align: center;
@@ -167,7 +178,7 @@ main.abt #s03 .coach {
   align-items: flex-end;
   padding: 0 36px;
   perspective: 2500px;
-  margin: 0 50px;
+  margin: 50px;
   border-radius: 5px;
 }
 main.abt #s03 .cover-image {
@@ -236,6 +247,25 @@ main.abt #s03 .coach:hover .character {
   transform: translate3d(0%, -30%, 100px);
 }
 
+main.pht .container .card {
+  --bs-card-border-radius: 0.375rem 0.375rem 1rem 1rem;
+}
+main.pht .container .phtCard {
+  border: none;
+}
+main.pht .container .phtCard .phtCdbdy {
+  border-radius: 0 0 0.375rem 0.375rem;
+}
+main.pht .container a, main.pht .container h5 {
+  color: white;
+  font-family: "LXGW WenKai TC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+main.pht .container img.vh-25 {
+  height: 25vh !important;
+}
+
 main.addp {
   height: 85vh;
 }
@@ -267,6 +297,7 @@ main.addp .upFile .upFileLogo input {
 
 main.logIn {
   flex-grow: 1;
+  height: 85vh;
 }
 main.logIn .col-6 {
   font-family: "Protest Revolution", sans-serif;
@@ -279,7 +310,6 @@ main.logIn .col-6 {
 main.logIn .col-6 .logIn01 {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
 }
 main.logIn .col-6 .logIn01 a {
   color: var(--ULcolorOr);
@@ -345,9 +375,10 @@ footer .footerLogo img {
 }
 footer .footerText {
   position: relative;
-  height: 100px;
+  height: 70px;
 }
 footer .footerText p {
+  text-wrap: nowrap;
   margin: 0;
   position: absolute;
   top: 50%;

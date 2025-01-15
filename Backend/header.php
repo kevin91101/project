@@ -91,7 +91,7 @@ if (!isset($_SESSION['sAccount']))
         <div class="pull-left">
             <div class="logo">
                 <a href="index.php">
-                    <span style="font-size:18px;color:#fff; font-weight">
+                    <span style="font-size:18px;color:#fff;">
                         <img id="logoImg" src="logo/5-318.png" data-logo_big="logo/5-318.png" data-logo_small="logo/5-318.png"/>
                         後台管理系統
                     </span>

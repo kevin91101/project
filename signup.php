@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row row01">
             <div class="col-6 offset-6">
-                <div class="card logIn01 rounded-4" style="width: 400px;">
+                <div class="card logIn01 rounded-4 translate-middle-y" style="width: 400px;">
                     <div class="card-body m-2">
                         <h2 class="text-center fw-bold">CREATE ACCOUNT</h2>
                         <div class="mb-3">

@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row row01">
                 <div class="col-6 offset-6">
-                    <div class="card logIn01 rounded-4" style="width: 300px;">
+                    <div class="card logIn01 rounded-4 translate-middle-y" style="width: 300px;">
                         <div class="card-body m-2">
                             <h1 class="text-center fw-bold">LOG IN</h1>
                             <div class="mb-3">

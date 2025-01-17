@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2025-01-07 18:21:43
+-- 產生時間： 2025-01-17 14:03:34
 -- 伺服器版本： 10.4.32-MariaDB
 -- PHP 版本： 8.2.12
 
@@ -79,7 +79,14 @@ INSERT INTO `photos` (`Pid`, `Ptitle`, `Pca`) VALUES
 (9, 'danny', 1),
 (10, 'danny', 1),
 (11, 'danny', 7),
-(12, 'danny', 7);
+(12, 'danny', 7),
+(13, '', 1),
+(14, '', 1),
+(15, '', 1),
+(16, '', 1),
+(17, 'danny', 10),
+(18, 'danny', 6),
+(19, 'connie', 4);
 
 -- --------------------------------------------------------
 
@@ -166,7 +173,7 @@ ALTER TABLE `category`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `Pid` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `Pid` int(7) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `stmember`
